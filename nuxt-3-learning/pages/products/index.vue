@@ -14,5 +14,14 @@ definePageMeta({
   layout: "custom",
 });
 
+useHead({
+  title: "Product list",
+  meta: [
+    {
+      name: "description",
+      content: "content",
+    },
+  ],
+});
 const { data } = await useFetch("/api/getProductList");
 </script>

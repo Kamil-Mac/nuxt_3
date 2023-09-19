@@ -1,5 +1,12 @@
 <template>
-  <div><ProductDetails :product="product" /></div>
+  <div>
+    <!--    instead of useHead-->
+    <Head>
+      <Title>{{ product.title }}</Title>
+      <Meta name="description" content="content"></Meta>
+    </Head>
+    <ProductDetails :product="product" />
+  </div>
 </template>
 
 <script setup lang="ts">
